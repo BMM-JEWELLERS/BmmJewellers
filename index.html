@@ -63,7 +63,7 @@
       flex-direction: column;
       color: white;
       text-align: center;
-      padding: 80px 20px 40px;  /* ✅ pushes hero down from navbar */
+      padding: 20px;
     }
     .hero h1 {
       font-size: 50px;
@@ -88,9 +88,9 @@
     /* Sub Tabs (Image Buttons) */
     .sub-tabs {
       display: flex;
-  flex-direction: column;   /* ✅ stack images vertically */
-  gap: 20px;                /* ✅ spacing between images */
-  padding: 10px;
+      flex-wrap: wrap;   /* Allows wrapping on small screens */
+      gap: 20px;
+      margin-top: 20px;
     }
     .sub-tabs img {
       width: 100%;             /* Full width inside container */
@@ -199,92 +199,6 @@
   transform: scale(1.1);
   box-shadow: 0px 6px 20px rgba(0,0,0,0.3);
 }
-
-/* Mobile Styles */
-@media (max-width: 768px) {
-
-  /* Navbar */
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 15px;
-    position: relative;   /* ✅ prevent overlap */
-    z-index: 1000;        /* stays on top but doesn’t cover hero */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    flex-wrap: wrap;      /* ✅ wrap on small screens */
-}
-
-  }
-
-  .navbar .menu {
-    flex-wrap: wrap;         /* ✅ allow wrapping */
-    gap: 10px;
-    margin-top: 10px;
-  }
-
-  .navbar .menu a {
-    font-size: 14px;
-  }
-
-  /* Hero Section */
-  .hero h1 {
-    font-size: 28px;        /* ✅ smaller on phone */
-  }
-
-  .hero p {
-    font-size: 16px;
-  }
-
-  .hero button {
-    font-size: 14px;
-    padding: 8px 16px;
-  }
-
-  /* Sub Tabs (images) */
-  .sub-tabs {
-    display: flex;
-  flex-direction: column;   /* ✅ stack images vertically */
-  gap: 20px;                /* ✅ spacing between images */
-  padding: 10px;
-  }
-
-  .sub-tabs img {
-    width: 100%;
-  height: auto;
-  border-radius: 12px;
-  }
-
-  /* Logo + Text Section */
-  .logo-text-container {
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
-  }
-
-  .logo-text-container img {
-    margin-bottom: 15px;
-  }
-
-  .logo-text-container p {
-    font-size: 16px;
-    text-align: justify;
-  }
-
-  /* Footer */
-  .footer {
-    grid-template-columns: 1fr; /* ✅ stack columns */
-    text-align: center;
-  }
-
-  .footer a {
-    display: block;
-    margin: 8px auto;
-    width: 80%;
-  }
-
 
 
   </style>
