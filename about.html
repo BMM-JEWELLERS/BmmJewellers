@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - B.M.M. Jewellers</title>
+  <style>
+    body {
+      background-color: #d97884;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .navbar {
+      background-color: #9c041f;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .navbar .logo span {
+      color: gold;
+    }
+    .navbar .menu {
+      display: flex;
+      gap: 20px;
+    }
+    .navbar .menu a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      position: relative;
+      padding: 5px 0;
+      transition: color 0.3s ease;
+    }
+    .navbar .menu a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      width: 0;
+      height: 3px;
+      background-color: gold;
+      transition: width 0.3s ease;
+    }
+    .navbar .menu a:hover {
+      color: gold;
+    }
+    .navbar .menu a:hover::after {
+      width: 100%;
+    }
+
+    /* About Container */
+    .about-container {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 40px;
+      background: #fff9f2;
+      border-radius: 12px;
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      box-shadow: 0px 6px 18px rgba(0,0,0,0.2);
+    }
+    .about-container img {
+      width: 300px;
+      height: auto;
+      border-radius: 12px;
+      border: 3px solid #9c041f;
+    }
+    .about-container .text {
+      flex: 1;
+    }
+    .about-container h1 {
+      color: #9c041f;
+      margin-bottom: 20px;
+    }
+    .about-container p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #6b0f1a;
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">𝘽.𝙈.𝙈. <span>𝙅𝙚𝙬𝙚𝙡𝙡𝙚𝙧𝙨</span></div>
+    <div class="menu">
+      <a href="index.html">All Jewellery</a>
+      <a href="#">Gold</a>
+      <a href="#">Diamond</a>
+      <a href="#">Silver</a>
+      <a href="#">Platinum</a>
+      <a href="#">Coins & Bars</a>
+      <a href="#">Gift Store</a>
+      <a href="#">Collections</a>
+      <a href="#">Offers</a>
+      <a href="#">Solitaire</a>
+      <a href="about.html">About Us</a>
+    </div>
+  </div>
+
+  <!-- About Us Section -->
+  <div class="about-container">
+    <div class="text">
+      <h1>About Us</h1>
+      <h3>B.M.M Jewellers: A Legacy of Trust and Craftsmanship in Little Kanchipuram</h3>
+      <p>
+        Nestled in the heart of Little Kanchipuram, B.M.M Jewellers has been a beacon of trust and exquisite 
+        craftsmanship for generations. Our journey began with a simple yet profound vision: to create 
+        legacy. We believe that jewellery is more than just an accessory; it is an expression of love, a
+        celebration of milestones, and a testament to the enduring bonds of family.</p>
+        <p>
+        Our esteemed clientele is a testament to our unwavering commitment to quality and customer satisfaction.
+        We have had the privilege of being a part of countless joyous occasions, from a bride's radiant smile as she
+        selects her wedding set to the proud glimmer in a new parent's eyes as they choose a gift for their child.
+        One of our cherished customers recently shared, "The warmth and personal attention I received at B.M.M Jewellers
+        made finding the perfect necklace for my daughter's wedding an unforgettable experience.
+        At B.M.M Jewellers, we take pride in offering a diverse and splendid collection to cater to every 
+        taste and occasion.For every special occasion in our family, B.M.M Jewellers is our first and only choice. 
+        Their designs are a beautiful blend of tradition and modernity.
+      </p>
+    </div>
+    <img src="static/face.png.jpg" alt="About B.M.M. Jewellers">
+  </div>
+
+</body>
+</html>
